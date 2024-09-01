@@ -2,6 +2,9 @@
 
 `scope` is a Go module that provides iterators that can be used to automatically close, unlock, or cancel resources like files when they are no longer needed.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/goaux/scope.svg)](https://pkg.go.dev/github.com/goaux/scope)
+[![Go Report Card](https://goreportcard.com/badge/github.com/goaux/scope)](https://goreportcard.com/report/github.com/goaux/scope)
+
 The iterator returned by this package will execute the loop body exactly once.
 
 The defer idiom is commonly used in Go to allocate and release resources.
