@@ -30,7 +30,7 @@ This package provides another solution for such situations.
 The following code snippet achieves the same result as the code above.
 
 ```go
-import "github.com/goaux/iter/scopeos"
+import "github.com/goaux/scope"
 
 for file, err := range scope.Use2(os.Open(name)) {
     // If err==nil, the file will be closed at the end of the loop body regardless of break.
@@ -44,7 +44,7 @@ for file, err := range scope.Use2(os.Open(name)) {
 #### Example usage:
 
 ```go
-import "github.com/goaux/iter/scope"
+import "github.com/goaux/scope"
 
 for file, err := range scope.Use2(os.Create("test.gz")) {
     // If err==nil, the file will be closed at the end of the loop body regardless of break.
